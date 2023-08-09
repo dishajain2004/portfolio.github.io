@@ -1,0 +1,481 @@
+@import 'utilities.css';
+:root{
+    --primary:#golden;
+    --dark:#black;
+    --pure:#ffffff;
+    --ternary:#cream;
+    --light:#pastel;
+}
+body{
+    
+    font-family: 'Roboto',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+}
+header{
+    background-color:darkred;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin:0 auto;
+}
+
+@media(min-width:576px){
+    .container{
+        max-width:540px;
+    }
+}
+
+@media(min-width:768px){
+    .container{
+        max-width:720px;
+    }
+}
+
+@media(min-width:992px){
+    .container{
+        max-width:960px;
+    }
+}
+
+@media(min-width:1200px){
+    .container{
+        max-width:1152px;
+    }
+}
+
+header nav .left a{
+    color: black;
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s case;
+    -webkit-transition: all .3s case;
+    -moz-transition: all .3s case;
+    -ms-transition: all .3s case;
+    -o-transition: all .3s case;
+}
+header nav .left a:hover{
+    color: cornsilk; 
+}
+header nav{
+    padding:2rem 0;
+}
+header nav .branding{
+    margin-right: 3rem;
+}
+
+.student{
+    padding: 3rem 0;
+}
+
+.student .left img{
+    width:400px;
+}
+.student .right{
+    text-emphasis-color: black;
+}
+
+.student .right h2{
+    font-size: 10.6rem;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.student .right h2{
+    font-size: large;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.student .right h1 span{
+    color: white;
+
+}
+.student .right p h5{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.student .right{
+    margin-top: 7rem;
+}
+
+section{
+    background: plum;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+section.about .about-me-img{
+    height: 450px;
+}
+
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+section.about h1 span{
+    color: red;
+}
+section.about h2{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+section.about p{
+    color: darkred;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+section.about.social{
+    display:flex;
+}
+section.about.social a{
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+section.about .social a:hover{
+    background:black;
+}
+    
+.section-heading{
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.section-heading span{
+    color: white;
+}
+.section-heading + p{
+    color:white;
+    font-family: 'lato',sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+section.services{
+    background-color: palevioletred;
+}
+section.services .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+section.services .card-wrapper .card{
+    background: darkred;
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+section.services .card-wrapper .card img{
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+section.services .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+section.services .card-wrapper .card p{
+    font-family: 'lato',sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+section.services .card-wrapper .card:hover{
+    background: plum;
+}
+section.services .card-wrapper .card:hover h2,section.services .card-wrapper .card:hover h2{
+    color: black;
+}
+section.freelancer{
+    text-align: center;
+    background: darkred;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+}
+section.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+section.freelancer p{
+    margin-bottom: 2rem;
+    font-family: 'lato',sans-serif;
+}
+section.reviews .slider .slide img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    padding: 10rem;
+}
+
+section.reviews .slider .slide p h3{
+    font-family: 'lato',sans-serif;
+    color:black;
+    margin-bottom: 1rem;
+    text-align: center;
+    align-items: center;
+}
+section.reviews .slider .slide span h2{
+    font-size: 0.8rem;
+    text-align: center;
+    align-items: center;
+}
+section.reviews .slider .slide span h2{
+    text-align: center;
+    background: darkred;
+    color: white;
+}
+section.Work{
+    background-color: darkred;
+
+}
+
+section.Work .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    
+}
+section.Work .card-wrappper .card{
+    position: relative;
+    height: 250px;
+}
+
+section.Work .card-wrapper .card .overlay img{
+    height: 100%;
+    width: 100%;
+}
+
+
+section.Work .card-wrapper .card .overlay a{
+    color: white;
+    text-decoration: none;
+}
+section.Work .card-wrapper .card .overlay p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.contact{
+    background-color: palevioletred;
+
+}
+
+section.contact .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+section.contact .card-wrapper .card{
+    text-align:center;
+}
+section.contact .card-wrapper .card img{
+    margin-bottom: 2rem;
+}
+section.contact .card-wrapper .card h1{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card h5{
+    font-size: 1rem;
+    color:var(--dark);
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap :2rem;
+    margin-bottom: 2rem;
+}
+
+section.contact .input-wrap-2{
+    display:flex;
+    flex-direction: column;
+}
+
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+    border:1px solid var(--dark);
+    font-size: 0.9rem;
+}
+
+section.contact input{
+    padding: 0.5rem;
+    border:1px solid var(--dark);
+    font-size: 0.9rem;
+}
+
+section.contact .input-wrap-2 textarea{
+    padding:0.5rem;
+    border:1px solid var(--dark);
+    font-size: 0.9rem;
+}
+
+section.contact .input-wrap-2 textarea:focus{
+    outline:none;
+    background: darkgray;
+}
+
+section.contact input:focus {
+    outline:none;
+    background: darkgray;
+}
+
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer{
+    background-color: darkred;
+    text-align: center;
+    padding: 5rem 0 ;
+}
+
+footer .footer-logo{
+    margin-bottom: 3rem;
+}
+
+footer .footer-socials a{
+    margin-right: 1rem;
+}
+
+footer .footer-socials {
+    margin-bottom: 3rem;
+    margin-right: -1rem;
+}
+    
+footer .copyright {
+    color:var(--pure);
+}
+
+
+.site-main-wrapper{
+    position: relative;
+}
+
+.hamberger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background-color: palevioletred;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transition:all .5s ease-in-out;
+    -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -ms-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
+}
+
+.open{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+
+}
+
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.times img{
+    width: 30px;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+}
+
+.mobile-nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+@media (max-width:1024px){
+    header #main-nav{
+        display: none;
+    }
+    .student .left img{
+        width: 260px;
+        
+    }
+}
